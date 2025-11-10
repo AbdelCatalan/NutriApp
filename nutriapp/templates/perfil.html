@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% block title %}Perfil del Usuario{% endblock %}
+{% block content %}
+<h2 class="text-center text-success">Perfil del Usuario</h2>
+<form method="POST" class="bg-white p-4 rounded shadow-sm mt-3">
+  <div class="row">
+    <div class="col-md-6 mb-3"><input class="form-control" name="nombre" placeholder="Nombre"></div>
+    <div class="col-md-6 mb-3"><input class="form-control" name="apellidos" placeholder="Apellidos"></div>
+  </div>
+  <div class="row">
+    <div class="col-md-4 mb-3"><input type="number" class="form-control" name="edad" placeholder="Edad"></div>
+    <div class="col-md-4 mb-3">
+      <select class="form-select" name="sexo">
+        <option>Selecciona genero</option>
+        <option>Masculino</option>
+        <option>Femenino</option>
+      </select>
+    </div>
+    <div class="col-md-4 mb-3"><input type="email" class="form-control" name="email" placeholder="Correo electronico"></div>
+  </div>
+  <input type="password" class="form-control mb-3" name="password" placeholder="Contraseña">
+  <input type="number" class="form-control mb-3" name="peso" placeholder="Peso (kg)">
+  <input type="number" class="form-control mb-3" name="altura" placeholder="Altura (cm)">
+  <button class="btn btn-success w-100">Registrar</button>
+</form>
+{% endblock %}
