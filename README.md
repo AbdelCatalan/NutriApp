@@ -1,3 +1,4 @@
+En esta aplicacion intentamos hacer una aplicacion "funcionable" para que los usuarios puedan tener una buena salud, ya que la app ofrece recetas exquisitas pero saludables, entre otras cosas.
 # Nutri App
 ## 3-D
 ### Catalan Gallardo Abdel Obed
