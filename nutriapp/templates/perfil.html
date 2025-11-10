@@ -1,0 +1,68 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="container mt-5">
+  <div class="card shadow p-4" style="max-width: 500px; margin: auto;">
+    <h3 class="text-center mb-3">Crear Perfil de Usuario</h3>
+
+    <form method="POST" action="/perfil">
+      <div class="mb-3">
+        <label for="nombre" class="form-label">Nombre</label>
+        <input type="text" class="form-control" id="nombre" name="nombre" required>
+      </div>
+
+      <div class="mb-3">
+        <label for="apellidos" class="form-label">Apellidos</label>
+        <input type="text" class="form-control" id="apellidos" name="apellidos" required>
+      </div>
+
+      <div class="mb-3">
+        <label for="email" class="form-label">Correo electrónico</label>
+        <input type="email" class="form-control" id="email" name="email" required>
+      </div>
+
+      <div class="mb-3">
+        <label for="password" class="form-label">Contraseña</label>
+        <input type="password" class="form-control" id="password" name="password" required>
+      </div>
+
+      <div class="row">
+        <div class="col-md-6 mb-3">
+          <label for="edad" class="form-label">Edad</label>
+          <input type="number" class="form-control" id="edad" name="edad">
+        </div>
+        <div class="col-md-6 mb-3">
+          <label for="sexo" class="form-label">Sexo</label>
+          <select id="sexo" name="sexo" class="form-select">
+            <option value="">Selecciona...</option>
+            <option value="Mujer">Mujer</option>
+            <option value="Hombre">Hombre</option>
+            <option value="Otro">Otro</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="mb-3">
+        <label for="objetivo" class="form-label">Objetivo</label>
+        <select id="objetivo" name="objetivo" class="form-select">
+          <option value="">Selecciona...</option>
+          <option value="Bajar de peso">Bajar de peso</option>
+          <option value="Aumentar masa muscular">Aumentar masa muscular</option>
+          <option value="Mantener peso">Mantener peso</option>
+          <option value="Mejorar digestión">Mejorar digestión</option>
+          <option value="Controlar una condición">Controlar una condición</option>
+        </select>
+      </div>
+
+      <div class="d-grid">
+        <button type="submit" class="btn btn-success">Registrar Perfil</button>
+      </div>
+    </form>
+
+    {% if mensaje %}
+      <div class="alert alert-success text-center mt-3">
+        {{ mensaje }}
+      </div>
+    {% endif %}
+  </div>
+</div>
+{% endblock %}
