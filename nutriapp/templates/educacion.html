@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% block title %}Educacion Nutricional{% endblock %}
+{% block content %}
+<h2 class="text-center text-success">Educacion e Informacion</h2>
+<div class="row mt-3">
+  <div class="col-md-6">
+    <div class="card">
+      <img src="{{ url_for('static', filename='etiquetas.jpg') }}" class="card-img-top">
+      <div class="card-body">
+        <h5>¿Como leer las etiquetas nutricionales?</h5>
+        <p>Para leer etiquetas nutricionales, primero verifica el tamaño de la porción y el número total de porciones en el paquete. Luego, revisa la tabla nutricional fijándote en la lista de ingredientes (ordenada de mayor a menor cantidad). Presta atención a los valores de nutrientes como calorías, grasas (especialmente saturadas y trans), azúcares añadidos y sodio, y usa los porcentajes del Valor Diario (\(\)) para determinar si una porción es alta o baja en un nutriente específico (5% o menos es bajo, 20% o más es alto). </p>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-6">
+    <div class="card">
+      <img src="{{ url_for('static', filename='ejercicio.jpg') }}" class="card-img-top">
+      <div class="card-body">
+        <h5>Mitos y verdades sobre las dietas</h5>
+        <p>Existen numerosos mitos sobre las dietas, como que el pan y los carbohidratos engordan, que comer de noche es perjudicial, que el agua durante las comidas engorda, o que las dietas de moda son efectivas a largo plazo. Todas estas afirmaciones son falsas; el aumento de peso depende principalmente del balance calórico total, no de alimentos específicos, horarios o la ingesta de agua. La realidad es que una dieta saludable se basa en la variedad, la moderación, la personalización según las necesidades individuales y el ejercicio regular, enfocándose en un déficit calórico sostenible para perder peso y evitando soluciones rápidas que suelen provocar un efecto rebote.</p>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

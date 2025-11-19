@@ -1,0 +1,59 @@
+{% extends "base.html" %}
+{% block title %}Educacion Nutricional{% endblock %}
+{% block content %}
+<h2 class="text-center text-success">Banco de Recetas</h2>
+<div class="row mt-3">
+  <div class="col-md-6">
+    <div class="card">
+      <img src="{{ url_for('static', filename='receta1.jpg') }}" class="card-img-top">
+      <div class="card-body">
+        <h5>Ensalada de quinoa</h5>
+        <p>Ideal para principiantes: saludable, fresca y rapida de preparar.</p>
+        <h5>ingredientes</h5>
+1 taza de quinoa <br>
+2 tazas de agua <br>
+1 taza de tomates cherry, cortados por la mitad <br>
+1 taza de pepino cortado en cuadritos <br>
+1/4 taza de aceitunas kalamata cortadas en cuartos <br>
+1/4 taza de queso feta <br>
+3 cucharadas de aceite de oliva extra virgen <br>
+1 1/2 cucharada vinagre roja <br>
+3/4 cucharadita de orégano seco <br>
+1/4 cucharadita de sal <br>
+1/4 cucharadita de pimienta molida</p>
+        <h5>Instrucciones</h5>
+1- En una cacerola mediana, combina la quinoa y el agua. Déjala hervir hasta que toda el agua se absorba, de 15 a 20 minutos.<br>
+2- Transfiere la quinoa cocida a una bandeja para hornear y extiéndela uniformemente, ya que ayudará a que se enfríe más rápido. Una vez fría, coloca la quinoa en un tazón mediano y agrega los tomates, pepino, aceitunas y queso feta. Mezcla suavemente. <br>
+3- Para el aderezo o aliño mezcla en un tazón pequeño aceite de oliva, vinagre roja, orégano, sal y pimienta. Sírvelo sobre la ensalada y mezcla todo uniformemente. <br>
+      </div>
+    </div>
+    </div>
+    <div class="col-md-6">
+    <div class="card">
+      <img src="{{ url_for('static', filename='receta2.jpg') }}" class="card-img-top">
+      <div class="card-body">
+        <h5>Salmon al Horno con Verduras</h5>
+        <p>El salmón al horno con verduras es un plato principal saludable, equilibrado, sabroso y visualmente atractivo que combina lomos de salmón, un pescado azul rico en ácidos grasos omega-3 y proteínas, con una variedad de vegetales frescos asados. </p>
+        <h5>ingredientes</h5>
+4 Supremas De Salmón <br>
+8 ramitas de Brócoli bimi <br>
+8 Cebolletas <br>
+100 gramos de Tirabeques <br>
+1 Zanahoria <br>
+1/2 Limón <br>
+50 mililitros de Aceite De Sésamo <br>
+Aceite <br>
+Sal <br>
+Semillas De Sésamo <br>
+        <h5>Instrucciones</h5>
+1- Limpia el bimi y lávalo con los tirabeques. Limpia también las cebolletas y raspa la zanahoria; lava y corta esta en láminas finas a lo largo con una mandolina. <br>
+2- Limpia los lomos de salmón, retirando las posibles espinas con unas pinzas de cocina, lávalo y sécalo bien.<br>
+3- Precalienta el horno a 200°. Reparte las verduras en 4 trozos grandes de papel para hornear, añade el pescado encima. Sazona y riega con un hilo de aceite. Cierra bien los paquetes para que los jugos no se salgan durante la cocción.<br>
+4- Pon los paquetitos de la papillote sobre una bandeja refractaria y hornéalos unos 15 minutos a 200º.<br>
+5- Exprime el limón y filtra el zumo. Ponlo en un cuenco con el aceite de sésamo, 20 g de semillas y sal. <br>
+6- Abre los paquetitos co cuidado de no quemarte. Sirve el pescado junto con las verduras y con la vinagreta de sésamo en una salsera aparte.<br>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}
