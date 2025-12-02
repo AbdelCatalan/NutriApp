@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h2>Calculo de Macros</h2>
+
+<form method="POST">
+    <input type="number" name="peso" placeholder="Peso (kg)" required>
+    <input type="number" name="altura" placeholder="Altura (cm)" required>
+    <input type="number" name="edad" placeholder="Edad" required>
+
+    <select name="sexo">
+        <option value="hombre">Hombre</option>
+        <option value="mujer">Mujer</option>
+    </select>
+
+    <button type="submit">Calcular</button>
+</form>
+
+{% if resultado %}
+<p><strong>Calorias diarias:</strong> {{ resultado.calorias }}</p>
+<p><strong>Proteinas:</strong> {{ resultado.prote }}</p>
+<p><strong>Carbohidratos:</strong> {{ resultado.carbs }}</p>
+<p><strong>Grasas:</strong> {{ resultado.grasas }}</p>
+{% endif %}
+{% endblock %}
